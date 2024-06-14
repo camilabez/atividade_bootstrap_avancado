@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Atividade</title>
+    <link rel="stylesheet" href="lib/bootstrap.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poetsen+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .navbar-nav .nav-link.active {
+        color: #fff;
+      }
+
+      .nav-link {
+        text-align: center;
+        color: #fff;
+      }
+
+      section {
+        background-color: #fff;
+        padding-top: 100px;
+        font-family: "Roboto", sans-serif;
+      }
+
+      header {
+        position: sticky;
+        top: 0;
+        left: 0;
+        background-color: #561861;
+        color: #fff;
+        font-family: "Poetsen One", sans-serif;
+        font-style: normal;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5 {
+        font-family: "Poetsen One", sans-serif;
+        font-style: normal;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!--Cabeçalho início-->
+    <header class="sticky-top" id="cabecalho">
+      <div class="navbar navbar-expand-lg">
+        <div class="container">
+          <h1>Aumigos</h1>
+          <button
+            type="button"
+            class="navbar-toggler"
+            data-bs-toggle="collapse"
+            data-bs-target="#menu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <nav class="collapse navbar-collapse justify-content-end" id="menu">
+            <ul class="nav navbar-nav nav-pills">
+              <li class="nav-item">
+                <a class="nav-link active" href="#carousel-abertura">Início</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#noticias">Notícias</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#cards">Destaques</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!--Cabeçalho fim-->
+
+    <!--Carousel de fotos início-->
+    <div
+      id="carousel-abertura"
+      class="carousel carousel-fade slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div data-bs-interval="3000" class="carousel-item active">
+          <img
+            class="d-block w-100"
+            src="https://cdn.pixabay.com/photo/2020/08/01/11/56/cat-5455228_960_720.jpg"
+          />
+          <div class="carousel-caption">
+            <h2>Como cuidar da saúde do seu gato</h2>
+          </div>
+        </div>
+        <div data-bs-interval="3000" class="carousel-item">
+          <img
+            class="d-block w-100"
+            src="https://cdn.pixabay.com/photo/2017/11/02/15/20/dog-2911444_960_720.jpg"
+          />
+          <div class="carousel-caption">
+            <h2>Cuidados que todo filhote precisa</h2>
+          </div>
+        </div>
+        <div data-bs-interval="3000" class="carousel-item">
+          <img
+            class="d-block w-100"
+            src="https://cdn.pixabay.com/photo/2017/07/08/01/56/dog-2483294_1280.jpg"
+          />
+          <div class="carousel-caption">
+            <h2>Entenda o comportamento do seu cão</h2>
+          </div>
+        </div>
+      </div>
+      <button
+        data-bs-target="#carousel-abertura"
+        data-bs-slide="prev"
+        class="carousel-control-prev"
+        type="button"
+      >
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button
+        data-bs-target="#carousel-abertura"
+        data-bs-slide="next"
+        class="carousel-control-next"
+      >
+        <span class="carousel-control-next-icon"></span>
+      </button>
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carousel-abertura"
+          class="active"
+          data-bs-slide-to="0"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carousel-abertura"
+          data-bs-slide-to="1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carousel-abertura"
+          data-bs-slide-to="2"
+        ></button>
+      </div>
+    </div>
+    <!--Carousel de fotos fim-->
+
+    <!--Grid início-->
+    <section id="noticias">
+      <h2>Notícias</h2>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <img
+              class="d-block w-100"
+              src="https://cdn.pixabay.com/photo/2017/11/03/22/42/dog-2915914_960_720.jpg"
+              alt=""
+            />
+            <h5>Veja os benefícios de ter um pet</h5>
+            <a href="#" class="btn btn-dark">Veja mais</a>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <img
+              class="d-block w-100"
+              src="https://cdn.pixabay.com/photo/2022/01/09/19/53/nail-clipping-6926856_1280.jpg"
+              alt=""
+            />
+            <h5>Como cuidar das unhas do seu pet</h5>
+            <a href="#" class="btn btn-dark">Veja mais</a>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <img
+              class="d-block w-100"
+              src="https://cdn.pixabay.com/photo/2021/12/17/19/15/grooming-6877252_1280.jpg"
+              alt=""
+            />
+            <h5>Cuidados com seu gato</h5>
+            <a href="#" class="btn btn-dark">Veja mais</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Grid fim-->
+
+    <!--Card início-->
+    <section id="cards">
+      <h2>Destaques</h2>
+      <div class="container">
+        <div class="row">
+          <div class="col-4">
+            <article class="card">
+              <header class="card-header">Tudo sobre Cachorros</header>
+              <img
+                src="https://cdn.pixabay.com/photo/2019/03/19/18/50/dog-4066554_1280.jpg"
+              />
+              <div class="card-body">
+                <h4 class="card-title">Tudo sobre Cachorros</h4>
+                <p class="card-text">
+                  Conheça os cuidados que todo cachorro precisa.
+                </p>
+                <a href="#" class="btn btn-primary">Veja mais</a>
+              </div>
+              <footer class="card-footer">
+                Postado em <time>14/06/2024 às 16:00:00</time>
+              </footer>
+            </article>
+          </div>
+          <div class="col-4">
+            <div class="card text-bg-dark">
+              <img
+                src="https://cdn.pixabay.com/photo/2024/02/23/15/16/ai-generated-8592228_960_720.jpg"
+              />
+              <div class="card-img-overlay">
+                <h4 class="card-title">Agende sua Consulta</h4>
+                <h5 class="card-subtitle">Conheça nossos profissionais</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Facere quasi, dicta rerum nostrum, officiis eos veritatis.
+                </p>
+                <a href="#" class="btn btn-primary">Agende Agora</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <article class="card">
+              <header class="card-header">Tudo sobre Gatos</header>
+              <img
+                src="https://cdn.pixabay.com/photo/2019/06/22/18/04/cat-4292130_960_720.jpg"
+              />
+              <div class="card-body">
+                <h4 class="card-title">Tudo sobre Gatos</h4>
+                <p class="card-text">
+                  Conheça os cuidados que todo gato precisa.
+                </p>
+                <a href="#" class="btn btn-primary">Veja mais</a>
+              </div>
+              <footer class="card-footer">
+                Postado em <time>14/06/2024 às 16:00:00</time>
+              </footer>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Card fim-->
+
+    <script src="lib/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
